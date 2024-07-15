@@ -36,7 +36,7 @@ const App = () => {
   const fetchWeather = () => {
     setLoading(true);
     setError(null);
-    const apiUrl = `http://192.168.99.114:5000/weather?city=${city}`;
+    const apiUrl = `http://{ip_localhost}:5000/weather?city=${city}`;
 
     axios.get(apiUrl)
       .then(response => {
